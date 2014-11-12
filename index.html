@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>java4all by ieucourses</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- JS -->
+    <!-- load angular, nganimate, and ui-router -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js"></script>
+    <script src="app.js"></script>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -19,7 +30,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body ng-app="formApp">
     <div class="wrapper">
       <header>
         <h1 class="header">java4all</h1>
@@ -58,6 +69,12 @@
 <button onclick=circle1.style.fill="#dc322f";>Click to change to red</button><br/>
 
 <a class="video" title="The Falltape" href="http://www.youtube.com/v/ZeStnz5c2GI?fs=1&amp;autoplay=1">Videoo</a>
+
+
+<!-- views will be injected here -->
+<div class="container">
+    <div ui-view></div>
+</div>
 
    </section>
       <footer>
