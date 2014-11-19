@@ -2,64 +2,6 @@
 <div class="col-sm-8 col-sm-offset-2">
 
 <div class="tip">lorem ipsum ...</div>
-<canvas id="canvas" width=300 height=300></canvas>
-<script>
-var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-ctx.lineWidth = 1;
-
-var $0 = $("#0");
-var $1 = $("#1");
-var $2 = $("#2");
-var $0r = $("#0r");
-var $2r = $("#2r");
-
-var connectors = [];
-connectors.push({
-    from: $0,
-    to: $0r
-});
-connectors.push({
-    from: $1,
-    to: $0r
-});
-connectors.push({
-    from: $2,
-    to: $2r
-});
-
-connect();
-
-$(".draggable").draggable({
-    // event handlers
-    start: noop,
-    drag: connect,
-    stop: noop
-});
-
-function noop() {}
-
-function connect() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (var i = 0; i < connectors.length; i++) {
-        var c = connectors[i];
-        var eFrom = c.from;
-        var eTo = c.to;
-        var pos1 = eFrom.offset();
-        var pos2 = eTo.offset();
-        var size1 = eFrom.size();
-        var size2 = eTo.size();
-        ctx.beginPath();
-        ctx.moveTo(pos1.left + eFrom.width() + 3, pos1.top + eFrom.height() / 2);
-        ctx.lineTo(pos2.left + 5, pos2.top + eTo.height() / 2);
-        ctx.stroke();
-
-    }
-}
-</script>
-
   <div id="form-container">
   
       <div class="page-header text-center">
@@ -68,15 +10,15 @@ function connect() {
           <!-- the links to our nested states using relative paths -->
           <!-- add the active class if the state matches our ui-sref -->
           <div id="status-buttons" class="text-center">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div id="0"><a ui-sref-active="active" ui-sref=".start"><span>S</span></a></div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a ui-sref-active="active" ui-sref=".start"><span>S</span></a>
           <br/>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div id="0r"><a ui-sref-active="active" ui-sref=".profile"><span>1</span></a></div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a ui-sref-active="active" ui-sref=".profile"><span>1</span></a>
               <br/>
               <div id="1"><a ui-sref-active="active" ui-sref=".interests"><span>2</span></a></div>
               &nbsp;&nbsp;&nbsp;
               <div id="2"><a ui-sref-active="active" ui-sref=".payment"><span>3</span></a></div>
               <br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div id="2r"><a ui-sref-active="active" ui-sref=".end"><span>End</span></a></div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a ui-sref-active="active" ui-sref=".end"><span>End</span></a>
           </div>
       </div>
       
