@@ -21,10 +21,6 @@ ol.progtrckr {
             border-bottom: 4px solid silver;
         }
 
-        /*ol.progtrckr li:after {
-            content: "\00a0\00a0";
-        }*/
-
         ol.progtrckr li:before {
             position: relative;
             bottom: -2.5em;
@@ -82,12 +78,6 @@ ol.progtrckr {
             bottom: -1.6em;
             text-align: center;
         }
-
-/* End progress tracker CSS*/
-
-
-/* Tooltip CSS*/
-/* Corner radius */
 .ui-corner-all
 {
 	border-radius: 4px/*{cornerRadius}*/;
@@ -98,8 +88,8 @@ ol.progtrckr {
 	max-width: 300px;
 	-webkit-box-shadow: 0 0 5px #aaa;
 	box-shadow: 0 0 5px #aaa;
-    background: #666;
-    color: white;
+    background: #FF5A3D;
+    color: #F7F0F2;
     border: none;
     padding: 0;
     opacity: 1;
