@@ -88,7 +88,7 @@ ol.progtrckr {
 	max-width: 300px;
 	-webkit-box-shadow: 0 0 5px #aaa;
 	box-shadow: 0 0 5px #aaa;
-    background: #FF5A3D;
+    background: #A064A1;
     color: #F7F0F2;
     border: none;
     padding: 0;
@@ -112,28 +112,28 @@ ol.progtrckr {
 .right .ui-tooltip-content::after {
     top: 18px;
     left: -10px;
-    border-color: transparent #FF5A3D;
+    border-color: transparent #A064A1;
     border-width: 10px 10px 10px 0;
 }
 
 .left .ui-tooltip-content::after {
     top: 18px;
     right: -10px;
-    border-color: transparent #FF5A3D;
+    border-color: transparent #A064A1;
     border-width: 10px 0 10px 10px;
 }
 
 .top .ui-tooltip-content::after {
     bottom: -10px;
     left: 50%;
-    border-color: #FF5A3D transparent;
+    border-color: #A064A1 transparent;
     border-width: 10px 10px 0;
 }
 
 .bottom .ui-tooltip-content::after {
     top: -10px;
     left: 50%;
-    border-color: #FF5A3D transparent;
+    border-color: #A064A1 transparent;
     border-width: 0 10px 10px;
 }
 /*End Tooltip CSS*/
