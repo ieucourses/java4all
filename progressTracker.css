@@ -112,28 +112,28 @@ ol.progtrckr {
 .right .ui-tooltip-content::after {
     top: 18px;
     left: -10px;
-    border-color: transparent #666;
+    border-color: transparent #FF5A3D;
     border-width: 10px 10px 10px 0;
 }
 
 .left .ui-tooltip-content::after {
     top: 18px;
     right: -10px;
-    border-color: transparent #666;
+    border-color: transparent #FF5A3D;
     border-width: 10px 0 10px 10px;
 }
 
 .top .ui-tooltip-content::after {
     bottom: -10px;
     left: 50%;
-    border-color: #666 transparent;
+    border-color: #FF5A3D transparent;
     border-width: 10px 10px 0;
 }
 
 .bottom .ui-tooltip-content::after {
     top: -10px;
     left: 50%;
-    border-color: #666 transparent;
+    border-color: #FF5A3D transparent;
     border-width: 0 10px 10px;
 }
 /*End Tooltip CSS*/
