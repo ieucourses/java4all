@@ -12,7 +12,7 @@ ol.progtrckr {
     }
 
         ol.progtrckr li.progtrckr-done {
-            color: #8AECC0;
+            color: yellowgreen;
             border-bottom: 4px solid yellowgreen;
         }
 
