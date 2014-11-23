@@ -15,6 +15,7 @@
     <script src="SampleJson.js"></script>
     <script src="ProgressTracker.js"></script>
     <script src="video.js"></script>
+    <link rel="stylesheet" href="hint.css"></link>
 
    <!-- <link href="progressTracker.css" rel="stylesheet" /> -->
 <style>
@@ -336,9 +337,9 @@ header,
 <form id="msform">
 	<!-- progressbar -->
 	<ul id="progressbar">
-		<li class="active" data-tooltip="I’m the tooltip, yo.">Lecture 1</li>
-		<li>Lecture 2</li>
-		<li>Lecture 3</li>
+		<li class="active" ><span class="hint--bottom" data-hint="Thank you!">Lecture 1</span></li>
+		<li><span class="hint--error" data-hint="Thank you!">Lecture 2</span></li>
+		<li><span class="hint--error" data-hint="Thank you!">Lecture 3</span></li>
 	</ul>
 	<!-- fieldsets -->
 	<fieldset>
