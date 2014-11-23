@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <script src="SampleJson.js"></script>
     <script src="ProgressTracker.js"></script>
+    <script src="video.js"></script>
 
    <!-- <link href="progressTracker.css" rel="stylesheet" /> -->
 <style>
@@ -240,11 +241,15 @@ body {
 	</ul>
 	<!-- fieldsets -->
 	<fieldset>
-		<h2 class="fs-title">Create your account</h2>
+		<h2 class="fs-title">JAVA Hello World Example</h2>
 		<h3 class="fs-subtitle">This is step 1</h3>
-		<input type="text" name="email" placeholder="Email" />
-		<input type="password" name="pass" placeholder="Password" />
-		<input type="password" name="cpass" placeholder="Confirm Password" />
+<video id="example_video_1" class="video-js vjs-default-skin"
+  controls preload="auto" width="640" height="264"
+  poster="izmir.jpg"
+  data-setup='{"example_option":true}'>
+ <source src="eclipseJUnitMvn.mp4" type='video/mp4' />
+ <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+</video>
 		<input type="button" name="next" class="next action-button" value="Next" />
 	</fieldset>
 	<fieldset>
