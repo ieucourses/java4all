@@ -13,15 +13,24 @@
 <script>
 function clickPrevious() {
     if(typeof(Storage) !== "undefined") {
+      
+                var semi = document.getElementById("myCheckSemi").checked;
+                document.getElementById("demoSemi").innerHTML = semi;
                 var x = document.getElementById("myCheck").checked;
                 document.getElementById("demo").innerHTML = x;
             if(x){
-                localStorage.setItem("myCheck", "yes");
+                localStorage.setItem("myCheckSemi", "yes");
+                console.log(localStorage.getItem("myCheckSemi"));
+                 localStorage.setItem("myCheck", "yes");
                 console.log(localStorage.getItem("myCheck"));
             }else{
                  document.getElementById("myCheck").checked = false;
                   localStorage.removeItem("myCheck");
                  localStorage.setItem("myCheck", "no");
+                 
+                 document.getElementById("myCheckSemi").checked = false;
+                  localStorage.removeItem("myCheckSemi");
+                 localStorage.setItem("myCheckSemi", "no");
             }
     }
     location.href = "/java4all/sesto.html";
@@ -44,8 +53,10 @@ function clickPrevious() {
      </div>
 
 <p id="demo"></p>
+<p id="demoSemi"></p>
 <p><button onclick="clickPrevious()" type="button">Back</button></p>
 <input type="checkbox" id="myCheck"> Is Completed?
+<input type="checkbox" id="myCheckSemi"> semiFinished?
 <div id="result"></div>
 <video id="example_video_1" class="video-js vjs-default-skin"
   controls preload="auto" width="300" height="300"
