@@ -4,9 +4,9 @@
 <script>
 function clickCounter() {
     if(typeof(Storage) !== "undefined") {
-            sessionStorage.setItem("result", "completed");
-            console.log(sessionStorage.getItem("result"));
-             document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.getItem("result") + " time(s) in this session.";
+            localStorage.setItem("result", "completed");
+            console.log(localStorage.getItem("result"));
+             document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.getItem("result") + " time(s) in this session.";
 }
 }
 </script>
