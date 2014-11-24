@@ -4,9 +4,10 @@
 <script>
 function clickPrevious() {
     if(typeof(Storage) !== "undefined") {
-            localStorage.setItem("chk_complete", 1);
+            localStorage.setItem("chk_complete", true);
             console.log(localStorage.getItem("chk_complete"));
-             document.getElementById("chk_complete").innerHTML = "You have clicked the button " + localStorage.getItem("result") + " time(s) in this session.";
+            document.getElementById("chk_complete").checked=true;
+             document.getElementById("chk_complete").innerHTML = "You have clicked the button " + localStorage.getItem("chk_complete") + " time(s) in this session.";
 }
 }
 </script>
