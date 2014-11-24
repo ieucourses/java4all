@@ -4,11 +4,13 @@
 <script>
 function clickPrevious() {
     if(typeof(Storage) !== "undefined") {
-            localStorage.setItem("myCheck", true);
-            console.log(localStorage.getItem("myCheck"));
                 var x = document.getElementById("myCheck").checked;
                 document.getElementById("demo").innerHTML = x;
-}
+            if(x){
+                localStorage.setItem("myCheck", true);
+                console.log(localStorage.getItem("myCheck"));
+            }
+    }
 }
 </script>
 </head>
