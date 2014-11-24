@@ -5,6 +5,8 @@
 function clickCounter() {
     if(typeof(Storage) !== "undefined") {
             sessionStorage.name = "completed"; 
+            sessionStorage.setItem('result', 'completed');
+            console.log(sessionStorage.getItem('result'););
 }
 </script>
 </head>
