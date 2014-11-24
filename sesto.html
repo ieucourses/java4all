@@ -130,6 +130,32 @@ window.onload = function() {
 	.style("fill", "#FFFFFF")
 	.text("Lec 4");
 	}
+	
+	//LEC4
+        var xLec4 = localStorage.getItem("myCheckLec4");
+       	circle = document.getElementById('circLec4');
+        if(xLec4 == "yes"){
+        	console.log(xLec4+" - true fill red");
+        	circLec4.style.fill="#FF5A3D";
+        	lec2Lec4Line.style.stroke="#FF5A3D";
+        	lec3Lec4Line.style.stroke="#FF5A3D";
+
+  	d3.select("svg").append("svg:a")
+  	.attr("xlink:href", "/java4all/lec4.html") 
+	.append("svg:circle")
+  	.attr("cx", 350)
+  	.attr("cy",100)
+  	.attr("r", 20)
+  	.style("fill", "#FF5A3D");
+  	
+  	d3.select("svg").append("svg:text")
+  	.attr("x",336)
+  	.attr("y",106)
+  	.attr("font-size", "12px")
+  	.attr("font-anchor", "middle")
+	.style("fill", "#FFFFFF")
+	.text("Lec 4");
+	}
         
     }
 </script>
@@ -195,8 +221,8 @@ window.onload = function() {
       text-anchor="middle"
       fill="#545453">Lec 3</text>
       
-   <line x1="215"  y1="190" x2="350"   y2="100" style="stroke:#A9EBF7;"/>
-   <line x1="270"  y1="100" x2="350"   y2="100" style="stroke:#A9EBF7;"/>
+   <line id="lec2Lec4Line" x1="215"  y1="190" x2="350"   y2="100" style="stroke:#A9EBF7;"/>
+   <line id="lec3Lec4Line" x1="270"  y1="100" x2="350"   y2="100" style="stroke:#A9EBF7;"/>
     <circle id="circLec4" cx="350" cy="100" r="20"
                 style="fill: #F7F0F2"/>
     <text id="txtLec4" x="350" y="105"
@@ -205,8 +231,8 @@ window.onload = function() {
       text-anchor="middle"
       fill="#545453">Lec 4</text>
 
-   <line x1="370"  y1="100" x2="450"   y2="100" style="stroke:#A9EBF7;"/>
-<rect x="450" y="80" width="60" height="40"
+   <line id="lec4EndLine" x1="370"  y1="100" x2="450"   y2="100" style="stroke:#A9EBF7;"/>
+<rect id="rectEnd" x="450" y="80" width="60" height="40"
   style="fill:#0BBFDE;fill-opacity:0.8" />
 <text x="480" y="105"
       font-family="sans-serif"
