@@ -16,21 +16,21 @@ function clickPrevious() {
       
                 var semi = document.getElementById("myCheckSemi").checked;
                 document.getElementById("demoSemi").innerHTML = semi;
-                var x = document.getElementById("myCheck").checked;
+                var x = document.getElementById("myCheckLec2").checked;
                 document.getElementById("demo").innerHTML = x;
             if(x){
-                localStorage.setItem("myCheckSemi", "yesLec2");
+                localStorage.setItem("myCheckSemi", "yes");
                 console.log(localStorage.getItem("myCheckSemi"));
-                 localStorage.setItem("myCheck", "yesLec2");
-                console.log(localStorage.getItem("myCheck"));
+                 localStorage.setItem("myCheckLec2", "yes");
+                console.log(localStorage.getItem("myCheckLec2"));
             }else{
-                 document.getElementById("myCheck").checked = false;
-                  localStorage.removeItem("myCheck");
-                 localStorage.setItem("myCheck", "noLec2");
+                 document.getElementById("myCheckLec2").checked = false;
+                  localStorage.removeItem("myCheckLec2");
+                 localStorage.setItem("myCheckLec2", "no");
                  
                  document.getElementById("myCheckSemi").checked = false;
                   localStorage.removeItem("myCheckSemi");
-                 localStorage.setItem("myCheckSemi", "noLec2");
+                 localStorage.setItem("myCheckSemi", "no");
             }
     }
     location.href = "/java4all/sesto.html";
@@ -55,7 +55,7 @@ function clickPrevious() {
 <p id="demo"></p>
 <p id="demoSemi"></p>
 <p><button onclick="clickPrevious()" type="button">Back</button></p>
-<input type="checkbox" id="myCheck"> Is Completed?
+<input type="checkbox" id="myCheckLec2"> Is Completed?
 <input type="checkbox" id="myCheckSemi"> semiFinished?
 <div id="result"></div>
 <video id="example_video_1" class="video-js vjs-default-skin"
