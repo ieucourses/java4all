@@ -23,7 +23,7 @@ window.onload = function() {
 
         	txtLec2.style.fill="#FFFFFF";
         	txtLec3.style.fill="#FFFFFF";
-  	var mysvg = node.enter().append("svg:a")
+  	d3.select("svg").append("svg:a")
   	.attr("xlink:href", "/java4all/sesfrom.html")  // <-- reading the new "url" property
 	.append("svg:circle")
   	.attr("cx", 250)
@@ -31,6 +31,9 @@ window.onload = function() {
   	.attr("r", 20)
   	.style("fill", "#6BB961")
   	.on("click", click);  
+  	
+  	d3.select("circLec2")..append("svg:a")
+  	.attr("xlink:href", "/java4all/sesfrom2.html").on("click", click);  
   	
         }else if(semi == "yes"){
         	console.log(x +" - false fill yellow");
@@ -83,7 +86,7 @@ window.onload = function() {
     
     <line x1="125"  y1="120" x2="200"   y2="200" style="stroke:#A9EBF7;"/>
     
-      <a xlink:href="/java4all/sesfrom.html">
+      
         <circle id="circLec2" cx="200" cy="200" r="20"
                 style="fill: #F7F0F2"/>
     <text id="txtLec2" x="200" y="205"
@@ -91,7 +94,7 @@ window.onload = function() {
       font-size="12px"
       text-anchor="middle"
       fill="#545453">Lec 2</text>
-    </a>
+   
     
     <line x1="140"  y1="100" x2="250"   y2="100" style="stroke:#A9EBF7;"/>
     
