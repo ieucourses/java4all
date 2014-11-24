@@ -31,6 +31,12 @@ window.onload = function() {
   	.attr("cy",100)
   	.attr("r", 20)
   	.style("fill", "#6BB961")
+  	.append("svg:text")
+  	.attr("x",200)
+  	.attr("y",205)
+  	.attr("font-size", "12px")
+  	.attr("font-anchor", "middle")
+	.style("fill", "#FFFFFF")
   	.on("click", click);  
   	
   	d3.select("circLec2").append("svg:a")
