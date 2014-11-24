@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/respond.js"></script>
+    <script src="video.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <script>
 function clickPrevious() {
@@ -46,7 +47,12 @@ function clickPrevious() {
 <p><button onclick="clickPrevious()" type="button">Back</button></p>
 <input type="checkbox" id="myCheck"> Is Completed?
 <div id="result"></div>
-<p>Click the button to see the counter increase.</p>
-<p>Close the browser tab (or window), and try again, and the counter is reset.</p>
+<video id="example_video_1" class="video-js vjs-default-skin"
+  controls preload="auto" width="300" height="300"
+  poster="izmir.jpg"
+  data-setup='{"example_option":true}'>
+ <source src="eclipseJUnitMvn.mp4" type='video/mp4' />
+ <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+</video>
 </body>
 </html>
