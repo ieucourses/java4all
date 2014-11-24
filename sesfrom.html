@@ -16,12 +16,12 @@ function clickPrevious() {
                 var x = document.getElementById("myCheck").checked;
                 document.getElementById("demo").innerHTML = x;
             if(x){
-                localStorage.setItem("myCheck", true);
+                localStorage.setItem("myCheck", "yes");
                 console.log(localStorage.getItem("myCheck"));
             }else{
                  document.getElementById("myCheck").checked = false;
                   localStorage.removeItem("myCheck");
-                 localStorage.setItem("myCheck", false);
+                 localStorage.setItem("myCheck", "no");
             }
     }
     location.href = "/java4all/sesto.html";
