@@ -3,7 +3,8 @@
 <head>
 <script>
 window.onload = function() {
-        document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
+        document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.name + " time(s) in this session.";
+        console.log(localStorage.name);
     }
 </script>
 </head>
