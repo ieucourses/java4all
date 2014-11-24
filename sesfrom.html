@@ -4,7 +4,7 @@
 <script>
 function clickPrevious() {
     if(typeof(Storage) !== "undefined") {
-            localStorage.setItem("chk_complete", true);
+            localStorage.setItem("chk_complete", 1);
             console.log(localStorage.getItem("chk_complete"));
              document.getElementById("chk_complete").innerHTML = "You have clicked the button " + localStorage.getItem("result") + " time(s) in this session.";
 }
