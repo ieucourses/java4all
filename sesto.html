@@ -72,8 +72,6 @@ window.onload = function() {
         	console.log(xLec2+" - true fill red");
         	circLec2.style.fill="#FF5A3D";
         	lec1Lec2Line.style.stroke="#FF5A3D";
-        	circLec4.style.fill="#6BB961";
-        	txtLec4.style.fill="#FFFFFF";
 
 	d3.select("svg").append("svg:a")
   	.attr("xlink:href", "/java4all/lec2.html") 
@@ -90,8 +88,32 @@ window.onload = function() {
   	.attr("font-anchor", "middle")
 	.style("fill", "#FFFFFF")
 	.text("Lec 2");
+        
+        //LEC3
+        var xLec3 = localStorage.getItem("myCheckLec3");
+       	circle = document.getElementById('circLec3');
+        if(xLec3 == "yes"){
+        	console.log(xLec3+" - true fill red");
+        	circLec3.style.fill="#FF5A3D";
+        	lec1Lec3Line.style.stroke="#FF5A3D";
 
+  	d3.select("svg").append("svg:a")
+  	.attr("xlink:href", "/java4all/lec3.html") 
+	.append("svg:circle")
+  	.attr("cx", 250)
+  	.attr("cy",100)
+  	.attr("r", 20)
+  	.style("fill", "#FF5A3D");
+  	
+  	d3.select("svg").append("svg:text")
+  	.attr("x",236)
+  	.attr("y",106)
+  	.attr("font-size", "12px")
+  	.attr("font-anchor", "middle")
+	.style("fill", "#FFFFFF")
+	.text("Lec 3");
 
+	}else if(xLec2 == "yes"){
   	d3.select("svg").append("svg:a")
   	.attr("xlink:href", "/java4all/lec4.html") 
 	.append("svg:circle")
@@ -107,8 +129,8 @@ window.onload = function() {
   	.attr("font-anchor", "middle")
 	.style("fill", "#FFFFFF")
 	.text("Lec 4");
-        }
-
+	}
+        
     }
 </script>
 </head>
@@ -162,7 +184,7 @@ window.onload = function() {
       fill="#545453">Lec 2</text>
    
     
-    <line x1="140"  y1="100" x2="250"   y2="100" style="stroke:#A9EBF7;"/>
+    <line id="lec1Lec3Line" x1="140"  y1="100" x2="250"   y2="100" style="stroke:#A9EBF7;"/>
     
     
     <circle id="circLec3" cx="250" cy="100" r="20"
