@@ -15,8 +15,10 @@ window.onload = function() {
         console.log(localStorage.getItem("myCheck"));
         	circle = document.getElementById('circLec1');
         if(localStorage.getItem("myCheck")){
+        	console.log("true fill red");
         	circle.setAttribute("fill", "#FF5A3D");
         }else{
+        	console.log("false fill green");
         	circle.setAttribute("fill", "#6BB961");
         }
     }
