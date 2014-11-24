@@ -26,19 +26,20 @@ window.onload = function() {
         	txtLec3.style.fill="#FFFFFF";
   	d3.select("svg").append("svg:a")
   	.attr("xlink:href", "/java4all/sesfrom.html")  // <-- reading the new "url" property
-	.append("svg:text")
-  	.attr("x",250)
-  	.attr("y",105)
-  	.attr("font-size", "12px")
-  	.attr("font-anchor", "middle")
-	.style("fill", "#FFFFFF")
-	.text("Lec 3")
 	.append("svg:circle")
   	.attr("cx", 250)
   	.attr("cy",100)
   	.attr("r", 20)
   	.style("fill", "#6BB961")
   	.on("click", click);
+  	
+  	d3.select("svg").append("svg:text")
+  	.attr("x",250)
+  	.attr("y",100)
+  	.attr("font-size", "12px")
+  	.attr("font-anchor", "middle")
+	.style("fill", "#FFFFFF")
+	.text("Lec 3");
   	
   	
   	d3.select("circLec2").append("svg:a")
