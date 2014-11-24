@@ -16,12 +16,12 @@ window.onload = function() {
        	circle = document.getElementById('circLec1');
         if(x == "yes"){
         	console.log(x+" - true fill red");
-        	circLec1.style.fill="red";
-        	//circle.setAttribute("fill", "#FF5A3D");
+        	circLec1.style.fill="#FF5A3D";
+        	stLec1Line.style.stroke="#FF5A3D";
         }else{
         	console.log(x +" - false fill green");
-        	circLec1.style.fill="green";
-        	//circle.setAttribute("fill", "#6BB961");
+        	circLec1.style.fill="#6BB961";
+        	//circle.setAttribute("fill", "");
         }
     }
 </script>
@@ -52,7 +52,7 @@ window.onload = function() {
       text-anchor="middle"
       fill="#FFFFFF">Start</text>
 
- <line x1="70"  y1="100" x2="100"   y2="100" style="stroke:#A9EBF7;"/>
+ <line id="stLec1Line" x1="70"  y1="100" x2="100"   y2="100" style="stroke:#A9EBF7;"/>
 	
     <a xlink:href="/java4all/sesfrom.html" onclick=circLec1.style.fill="yellow";>
         <circle id="circLec1" cx="120" cy="100" r="20"
