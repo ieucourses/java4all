@@ -9,7 +9,9 @@ function clickPrevious() {
             if(x){
                 localStorage.setItem("myCheck", true);
                 console.log(localStorage.getItem("myCheck"));
-                document.getElementById("myCheck").checked = false;
+            }else{
+                 document.getElementById("myCheck").checked = false;
+                 localStorage.setItem("myCheck", false);
             }
     }
 }
