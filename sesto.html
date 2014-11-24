@@ -31,13 +31,13 @@ window.onload = function() {
   	.attr("cy",100)
   	.attr("r", 20)
   	.style("fill", "#6BB961")
+  	.on("click", click)  
   	.append("svg:text")
   	.attr("x",200)
   	.attr("y",205)
   	.attr("font-size", "12px")
   	.attr("font-anchor", "middle")
-	.style("fill", "#FFFFFF")
-  	.on("click", click);  
+	.style("fill", "#FFFFFF");
   	
   	d3.select("circLec2").append("svg:a")
   	.attr("xlink:href", "/java4all/sesfrom2.html").on("click", click);  
