@@ -11,14 +11,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <script>
 window.onload = function() {
-        document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.getItem("myCheck") + " time(s) in this session.";
-        console.log(localStorage.getItem("myCheck"));
-        	circle = document.getElementById('circLec1');
-        if(localStorage.getItem("myCheck")){
-        	console.log("true fill red");
+	var x = localStorage.getItem("myCheck");
+        document.getElementById("result").innerHTML = "You have clicked the button " + x + " time(s) in this session.";
+       	circle = document.getElementById('circLec1');
+        if(x){
+        	console.log(x+" fill red");
         	circle.setAttribute("fill", "#FF5A3D");
         }else{
-        	console.log("false fill green");
+        	console.log(x +" fill green");
         	circle.setAttribute("fill", "#6BB961");
         }
     }
