@@ -13,10 +13,11 @@
 window.onload = function() {
         document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.getItem("myCheck") + " time(s) in this session.";
         console.log(localStorage.getItem("myCheck"));
+        	circle = document.getElementById('circLec1');
         if(localStorage.getItem("myCheck")){
-        	circLec1.style.fill="#FF5A3D";
+        	circle.setAttribute("fill", "#FF5A3D");
         }else{
-        	circLec1.style.fill="#6BB961";
+        	circle.setAttribute("fill", "#6BB961");
         }
     }
 </script>
