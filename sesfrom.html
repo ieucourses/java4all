@@ -2,17 +2,18 @@
 <html>
 <head>
 <script>
-function clickCounter() {
+function clickPrevious() {
     if(typeof(Storage) !== "undefined") {
-            localStorage.setItem("result", "completed");
-            console.log(localStorage.getItem("result"));
-             document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.getItem("result") + " time(s) in this session.";
+            localStorage.setItem("chk_complete", true);
+            console.log(localStorage.getItem("chk_complete"));
+             document.getElementById("chk_complete").innerHTML = "You have clicked the button " + localStorage.getItem("result") + " time(s) in this session.";
 }
 }
 </script>
 </head>
 <body>
-<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<p><button onclick="clickPrevious()" type="button">Back</button></p>
+<input type="checkbox" name="chk_complete" value="chk_complete" /> Is Completed?<br />
 <div id="result"></div>
 <p>Click the button to see the counter increase.</p>
 <p>Close the browser tab (or window), and try again, and the counter is reset.</p>
