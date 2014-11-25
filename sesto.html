@@ -14,6 +14,8 @@
 window.onload = function() {
 	var stringBackUrl = document.referrer;
 	console.log("Back button is from : " + stringBackUrl);
+	 document.getElementById("demo").innerHTML = stringBackUrl;
+	 
 	var x = localStorage.getItem("myCheck");
 	var semi = localStorage.getItem("myCheckSemi");
         document.getElementById("result").innerHTML = "You have clicked the button " + x + " -semi- "+semi+ " time(s) in this session.";
@@ -244,6 +246,7 @@ window.onload = function() {
    
 </svg>
              <div id="result"></div>
+             <p id="demo"></p>
      </div>
 </body>
 </html>
