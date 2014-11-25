@@ -16,7 +16,7 @@ window.onload = function() {
 	console.log("Back button is from : " + stringBackUrl);
 	 document.getElementById("demo").innerHTML = stringBackUrl;
 	 
-	 if(stringBackUrl.trim().match(/^\s+$/) != null){
+	 if(stringBackUrl.indexOf("lec")>0){
 	 	console.log("sesto ana sayfa degilim.");
 	 	circLec1.style.fill="yellow";
 	 	txtLec1.style.fill="#545453";
@@ -200,7 +200,7 @@ window.onload = function() {
 
  <line id="stLec1Line" x1="70"  y1="100" x2="100"   y2="100" style="stroke:#A9EBF7;"/>
 	
-    <a xlink:href="/java4all/sesfrom.html" onclick=circLec1.style.fill="yellow";>
+    <a xlink:href="/java4all/lec1.html" onclick=circLec1.style.fill="yellow";>
         <circle id="circLec1" cx="120" cy="100" r="20"
                 style="fill: #6BB961"/>
     <text id="txtLec1" x="120" y="105"
