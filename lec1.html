@@ -4,47 +4,66 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>java4all by ieucourses</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="fancybox-pack.js"></script>
-    <link rel="stylesheet" href="fancybox.css" type="text/css" media="screen" />
-     <script type="text/javascript" src="video.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <script src="video.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
+<script>
+function clickPrevious() {
+    if(typeof(Storage) !== "undefined") {
+      
+                var semi = document.getElementById("myCheckSemi").checked;
+                document.getElementById("demoSemi").innerHTML = semi;
+                var x = document.getElementById("myCheck").checked;
+                document.getElementById("demo").innerHTML = x;
+            if(x){
+                localStorage.setItem("myCheckSemi", "yes");
+                console.log(localStorage.getItem("myCheckSemi"));
+                 localStorage.setItem("myCheck", "yes");
+                console.log(localStorage.getItem("myCheck"));
+            }else{
+                 document.getElementById("myCheck").checked = false;
+                  localStorage.removeItem("myCheck");
+                 localStorage.setItem("myCheck", "no");
+                 
+                 document.getElementById("myCheckSemi").checked = false;
+                  localStorage.removeItem("myCheckSemi");
+                 localStorage.setItem("myCheckSemi", "no");
+            }
+    }
+    location.href = "/java4all/sesto.html";
+}
+</script>
+</head>
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/ieucourses/java4all">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
+
     <div class="wrapper">
-      <header>
-        <h1 class="header">java4all</h1>
-        <p class="header">Introduction to Java</p>
-
-        <ul>
-	 <li><a class="buttons github" href="https://github.com/ieucourses/java4all">View On GitHub</a></li>
-        </ul>
-
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/ieucourses">ieucourses</a></p>
-
-
-      </header>
       <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lecture 1</h3>
+        <div id="title">
+          <h1>java4all</h1>
+          <p>Introduction to Java</p>
+          <hr>
+     </div>
 
-Video burada
-
-   </section>
-      <footer>
-        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
-  </body>
+<p id="demo"></p>
+<p id="demoSemi"></p>
+<p><button onclick="clickPrevious()" type="button">Back</button></p>
+<input type="checkbox" id="myCheck"> Is Completed?
+<input type="checkbox" id="myCheckSemi"> semiFinished?
+<div id="result"></div>
+<video id="example_video_1" class="video-js vjs-default-skin"
+  controls preload="auto" width="300" height="300"
+  poster="izmir.jpg"
+  data-setup='{"example_option":true}'>
+ <source src="eclipseJUnitMvn.mp4" type='video/mp4' />
+ <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+</video>
+</body>
 </html>
