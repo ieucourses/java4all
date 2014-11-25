@@ -36,32 +36,6 @@ window.onload = function() {
 	console.log("sesto ana sayfa.");
 	 }
 	 
-	 //LEC2
-        var xLec2 = localStorage.getItem("myCheckLec2");
-       	circle = document.getElementById('circLec2');
-        if(xLec2 == "yes"){
-           	console.log(xLec2+" - true fill red");
-        	circLec2.style.fill="#FF5A3D";
-        	lec1Lec2Line.style.stroke="#FF5A3D";
-
-	d3.select("svg").append("svg:a")
-  	.attr("xlink:href", "/java4all/lec2.html") 
-	.append("svg:circle")
-  	.attr("cx", 200)
-  	.attr("cy",200)
-  	.attr("r", 20)
-  	.style("fill", "#FF5A3D");
-  	
-  	d3.select("svg").append("svg:text")
-  	.attr("x",188)
-  	.attr("y",202)
-  	.attr("font-size", "12px")
-  	.attr("font-anchor", "middle")
-	.style("fill", "#FFFFFF")
-	.text("Lec 2");
-        }
-        
-        
 	//LEC 1 
 	var x = localStorage.getItem("myCheck");
 	var semi = localStorage.getItem("myCheckSemi");
@@ -109,6 +83,31 @@ window.onload = function() {
   	
         }else{
            console.log(x +" - lec1 bos geldiii.");
+        }
+        
+        //LEC2
+        var xLec2 = localStorage.getItem("myCheckLec2");
+       	circle = document.getElementById('circLec2');
+        if(xLec2 == "yes"){
+        	console.log(xLec2+" - true fill red");
+        	circLec2.style.fill="#FF5A3D";
+        	lec1Lec2Line.style.stroke="#FF5A3D";
+
+	d3.select("svg").append("svg:a")
+  	.attr("xlink:href", "/java4all/lec2.html") 
+	.append("svg:circle")
+  	.attr("cx", 200)
+  	.attr("cy",200)
+  	.attr("r", 20)
+  	.style("fill", "#FF5A3D");
+  	
+  	d3.select("svg").append("svg:text")
+  	.attr("x",188)
+  	.attr("y",202)
+  	.attr("font-size", "12px")
+  	.attr("font-anchor", "middle")
+	.style("fill", "#FFFFFF")
+	.text("Lec 2");
         }
         
         //LEC3
