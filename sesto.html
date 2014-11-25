@@ -12,6 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <script>
 window.onload = function() {
+	var stringBackUrl = document.referrer;
+	console.log("Back button is from : " + stringBackUrl);
 	var x = localStorage.getItem("myCheck");
 	var semi = localStorage.getItem("myCheckSemi");
         document.getElementById("result").innerHTML = "You have clicked the button " + x + " -semi- "+semi+ " time(s) in this session.";
