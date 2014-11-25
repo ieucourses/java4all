@@ -16,7 +16,7 @@ window.onload = function() {
 	console.log("Back button is from : " + stringBackUrl);
 	 document.getElementById("demo").innerHTML = stringBackUrl;
 	 
-	 if(stringBackUrl.indexOf("sesto") < 0){
+	 if(stringBackUrl.indexOf(" ") < 0){
 	 	console.log("sesto ana sayfa degilim.");
 	 	circLec1.style.fill="yellow";
 	 	txtLec1.style.fill="#545453";
@@ -70,8 +70,8 @@ window.onload = function() {
         	console.log(x +" - false fill yellow");
         	circLec1.style.fill="yellow";
         }else{
-        	console.log(x +" - false fill green");
-        	circLec1.style.fill="#6BB961";
+        	// console.log(x +" - false fill green");
+        	// circLec1.style.fill="#6BB961";
         	//circle.setAttribute("fill", "");
         }
         
