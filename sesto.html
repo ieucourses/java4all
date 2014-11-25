@@ -16,7 +16,7 @@ window.onload = function() {
 	console.log("Back button is from : " + stringBackUrl);
 	 document.getElementById("demo").innerHTML = stringBackUrl;
 	 
-	 if(stringBackUrl.trim().match(/^\s+$/) === null){
+	 if(stringBackUrl.trim().match(/^\s+$/) != null){
 	 	console.log("sesto ana sayfa degilim.");
 	 	circLec1.style.fill="yellow";
 	 	txtLec1.style.fill="#545453";
