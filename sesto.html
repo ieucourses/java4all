@@ -16,12 +16,23 @@ window.onload = function() {
 	console.log("Back button is from : " + stringBackUrl);
 	 document.getElementById("demo").innerHTML = stringBackUrl;
 	 
-	 if(stringBackUrl.indexOf("lec")>0){
-	 	console.log("sesto ana sayfa degilim.");
+	 if(stringBackUrl.indexOf("lec1")>0){
+	 	console.log("sesto ana sayfa degilim lec1.");
 	 	circLec1.style.fill="#F8F979";
 	 	stLec1Line.style.stroke="#F8F979";
 	 	txtLec1.style.fill="#545453";
-	 }else{
+	 }else if(stringBackUrl.indexOf("lec2")>0){
+	 	console.log("sesto ana sayfa degilim lec2.");
+	 	circLec2.style.fill="#F8F979";
+	 	lec1Lec2Line.style.stroke="#F8F979";
+	 	txtLec2.style.fill="#545453";	
+	 }else if(stringBackUrl.indexOf("lec3")>0){
+	 	console.log("sesto ana sayfa degilim lec3.");
+	 	circLec3.style.fill="#F8F979";
+	 	lec1Lec3Line.style.stroke="#F8F979";
+	 	txtLec3.style.fill="#545453";
+	 }
+	 else{
 	console.log("sesto ana sayfa.");
 	 }
 	 
