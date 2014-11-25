@@ -16,6 +16,11 @@ window.onload = function() {
 	console.log("Back button is from : " + stringBackUrl);
 	 document.getElementById("demo").innerHTML = stringBackUrl;
 	 
+	 if(stringBackUrl.indexOf("sesto") > -1){
+	 	circLec1.style.fill="#F8F979";
+	 	txtLec1.style.fill="#545453";
+	 }
+	 
 	var x = localStorage.getItem("myCheck");
 	var semi = localStorage.getItem("myCheckSemi");
         document.getElementById("result").innerHTML = "You have clicked the button " + x + " -semi- "+semi+ " time(s) in this session.";
