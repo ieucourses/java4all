@@ -14,7 +14,7 @@
 window.onload = function() {
 	var stringBackUrl = document.referrer;
 	console.log("Back button is from : " + stringBackUrl);
-	 document.getElementById("demo").innerHTML = stringBackUrl;
+	 // document.getElementById("demo").innerHTML = stringBackUrl;
 	 
 	 if(stringBackUrl.indexOf("lec1")>0){
 	 	console.log("sesto ana sayfa degilim lec1.");
@@ -39,7 +39,7 @@ window.onload = function() {
 	//LEC 1 
 	var x = localStorage.getItem("myCheck");
 	var semi = localStorage.getItem("myCheckSemi");
-        document.getElementById("result").innerHTML = "You have clicked the button " + x + " -semi- "+semi+ " time(s) in this session.";
+        // document.getElementById("result").innerHTML = "You have clicked the button " + x + " -semi- "+semi+ " time(s) in this session.";
        	circle = document.getElementById('circLec1');
         if(x == "yes"){
         	console.log(x+" - true fill red");
@@ -262,6 +262,7 @@ window.onload = function() {
    
 </svg>
 </section>
+
      </div>
 </body>
 </html>
