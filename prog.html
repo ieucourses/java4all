@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>java4all by ieucourses</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="javascripts/respond.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <style>
 #svg circle {
   stroke-dashoffset: 0;
@@ -23,8 +32,8 @@
 
 <div id="cont" data-pct="100">
 <svg id="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <circle r="90" cx="100" cy="100" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
-  <circle id="bar" r="90" cx="100" cy="100" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+  <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+  <circle id="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
 </svg>
 </div>
 <label for="percent">Type a percent!</label>
