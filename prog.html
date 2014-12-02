@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+    <script>
+function myFunction() {
+    $("#h01").html("Hello jQuery")
+}
+$(document).ready(myFunction);
+</script>
 <style>
 #svg circle {
   stroke-dashoffset: 0;
@@ -40,7 +46,7 @@ $('#percent').on('change', function(){
 <body>
 
 <h1>My first SVG</h1>
-
+<h1 id="h01"></h1>
 <h1>SVG Circle Progress</h1>
 <h2>Based off of CSS3 circle progress bars</h2>
 
