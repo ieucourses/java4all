@@ -21,6 +21,30 @@
   stroke: #940000;
 }
     </style>
+    <script>
+       	$('#percent').on('change', function(){
+  var val = parseInt($(this).val());
+  var $circle = $('#svg #bar');
+  
+  if (isNaN(val)) {
+   val = 100; 
+  }
+  else{
+    var r = $circle.attr('r');
+    var c = Math.PI*(r*2);
+   
+    if (val < 0) { val = 0;}
+    if (val > 100) { val = 100;}
+    
+    var pct = ((100-val)/100)*c;
+    
+    $circle.css({ strokeDashoffset: pct});
+    
+    $('#cont').attr('data-pct',val);
+  }
+});
+       </script>
+       
 <script>
 window.onload = function() {
 	var stringBackUrl = document.referrer;
@@ -223,32 +247,8 @@ window.onload = function() {
         <circle id="circLec1" cx="120" cy="100" r="20"
                 style="fill: #6BB961"/>
         <!-- progress -->        
-       <circle r="150" cx="150" cy="100" fill="transparent" stroke-dasharray="265.48" stroke-dashoffset="0"></circle>
-       <circle id="bar" r="150" cx="150" cy="100" fill="transparent" stroke-dasharray="265.48" stroke-dashoffset="0"></circle> 
-       <script>
-       	$('#percent').on('change', function(){
-  var val = parseInt($(this).val());
-  var $circle = $('#svg #bar');
-  
-  if (isNaN(val)) {
-   val = 100; 
-  }
-  else{
-    var r = $circle.attr('r');
-    var c = Math.PI*(r*2);
-   
-    if (val < 0) { val = 0;}
-    if (val > 100) { val = 100;}
-    
-    var pct = ((100-val)/100)*c;
-    
-    $circle.css({ strokeDashoffset: pct});
-    
-    $('#cont').attr('data-pct',val);
-  }
-});
-       </script>
-       
+       <circle r="30" cx="100" cy="100" fill="transparent" stroke-dasharray="265.48" stroke-dashoffset="0"></circle>
+       <circle id="bar" r="30" cx="100" cy="100" fill="transparent" stroke-dasharray="265.48" stroke-dashoffset="0"></circle> 
        <text id="txtLec1" x="120" y="105"
       font-family="sans-serif"
       font-size="12px"
